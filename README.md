@@ -1,10 +1,11 @@
-  *****Because Exam02 can be hard with you, I've made this repo with all the answers (there are also potential mistakes)*****
-  # Some notes ont this repo and the Exam02:
-
+  
+  *****Because Exam02 can be hard with you, I've made this repo with all the answers (there are also potential mistakes).*****
+ 
+ # Some notes on this repo and the Exam02:
  - The goal was to make it as easy to remember and as short as possible (Without being hard to understand).
- - Some explanations for Level_02 bits functions's are in .c files.
- - All the subjects comes from Pasqualerossi's repo (https://github.com/pasqualerossi/42-School-Exam-Rank-02.git)
- , so it is possible that allowed functions are now forbidden, keep that in mind.
+ - Some explanations for Level_02 bits functions are in .c files.
+ - All the subjects come from Pasqualerossi's repo (https://github.com/pasqualerossi/42-School-Exam-Rank-02.git)
+ , so it is possible that allowed functions may now be forbidden, keep that in mind.
  - The grademe simulator from Jcluzet is a good way to train yourself : https://github.com/JCluzet/42_EXAM.git
  - Functions like ft_putnbr, ft_putstr, ft_atoi should be memorized because of how many times you will have to use them.
  - Read th subject slowly and carefully, most of the time you waste time because you read it to fast and skip important parts.
@@ -34,7 +35,7 @@
     return (0);                   
   }    
 ```
-****Understanding what you are doing is much more important than Memorising every single exercices****
+****Understanding what you are doing is much more important than Memorising every single exercises****
 <br>
 Feel free to make suggestions to improve this ''"""guide"""''
 
