@@ -1,6 +1,5 @@
   *****Because Exam02 can be hard with you, I've made this repo with all the answers (there are also potential mistakes)*****
-
-  Some advices ont this repo and the Exam02:
+  # Some notes ont this repo and the Exam02:
 
  - The goal was to make it as easy to remember and as short as possible (Without being hard to understand).
  - Some explanations for Level_02 bits functions's are in .c files.
@@ -36,7 +35,7 @@
   }    
 ```
 ****Understanding what you are doing is much more important than Memorising every single exercices****
-
+<br>
 Feel free to make suggestions to improve this ''"""guide"""''
 
 Good Luck !
