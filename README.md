@@ -21,7 +21,7 @@
   #include <unistd.h> 
   int main(int argc, char **argv) 
   {                               
-    if (argc ==  x)                 x usually = to argc required in the subject + 1. 
+    if (argc ==  x)                 x = argc = args required in the subject + 1. 
     {                             
       int i = 0;                  
                                   
