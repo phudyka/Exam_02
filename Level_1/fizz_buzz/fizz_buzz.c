@@ -13,7 +13,7 @@ int main(void)
 {
 	int i = 1;
 
-	while (i != 100)
+	while (i <= 100)
 	{
 		if ((i % 3) == 0)
 			write(1, "fizz", 5);
@@ -26,5 +26,7 @@ int main(void)
 		write(1, "\n", 1);
 		i++;
 	}
+	else
+		write(1, "\n", 1);
 	return 0;
 }
