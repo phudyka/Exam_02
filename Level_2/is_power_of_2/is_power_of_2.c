@@ -1,12 +1,10 @@
-int	is_power_of_2(unsigned int n)
-{
-	int nbr = 1;
+#include <unistd.h>
 
-	while (nbr <= n)
-	{
-		if (nbr == 1)
-			return (1);
-		nbr *= 2;
-	}
-	return 0;
+int is_power_of_2(unsigned int n)
+{
+	if (n == 0)
+		return 0;
+   	while (n % 2 == 0)
+		n /= 2;
+	return n == 1;
 }
