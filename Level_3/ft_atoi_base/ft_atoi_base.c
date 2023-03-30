@@ -1,43 +1,33 @@
-char	to_lower(char c)
-{
-	if (c >= 'A' && c <= 'Z')
-		c -= 32;
-	return (c);
-}
-
-int digit(char c, int base)
-{
-	int max;
-
-	if (base <= 10)
-		max = base + '0';
-	else
-		max = base - 10 + 'a';
-	if (c >= '0' && <= '9' && c <= max)
-		return (c - '0');
-	else if (c >= 'a' && c <= 'f' && c <= max)
-		return (10 + c - 'a');
-	else
-		return (-1);
-}
+/*The function starts by checking if the first character of the string is a minus sign.
+ * If so, the sign is stored and the string is shifted by one character.
+ * Then, the function loops over the character string and converts each character to a digit by subtracting '0' from it.
+ * If the digit is greater than 9, it means it's an uppercase hexadecimal letter,
+ * which is then converted to lowercase before being converted to a digit.
+ * If the digit is out of range for the given base, the loop is stopped.
+ * At each iteration, the result is multiplied by the base and the digit is added.
+ * At the end of the loop, the final result is multiplied by the appropriate sign and returned.
+ *Note that this implementation does not handle cases of zero or negative base, which are not allowed in the scope of this exercise.*/
 
 int	ft_atoi_base(const char *str, int str_base)
 {
-	int i = 0;
-	int nbr = 0;
-	int res = 0;
-	int sign = 1;
+    int sign = 1;
+    int result = 0;
+    int digit;
 
-	if (str[i] == '-')
-	{
-		sign == -1;
-		i++;
-	}
-	while ((nbr = digit(to_lower(str[i]), str_base)) >= 0)
-	{
-		res = res * base;
-		res = res + (nbr * sign);
-		i++;
-	}
-	return (res);
+    if (*str == '-')
+    {
+        sign = -1;
+        str++;
+    }
+    while (*str)
+    {
+        digit = *str - '0';
+        if (digit > 9)
+            digit = (*str | 32) - 'a' + 10;
+        if (digit < 0 || digit >= str_base)
+            break;
+        result = result * str_base + digit;
+        str++;
+    }
+    return (result * sign);
 }
