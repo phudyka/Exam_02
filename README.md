@@ -40,8 +40,6 @@
 ```
 ****Understanding what you are doing is much more important than memorising every single exercise****
 <br>
-Feel free to make suggestions to improve this ''"""guide"""''
-
 Good Luck !
 
 
